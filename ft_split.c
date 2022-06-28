@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lomasson <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lomasson <lomasson@student.42mulhouse.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 14:03:20 by lomasson          #+#    #+#             */
-/*   Updated: 2022/03/07 19:12:34 by lomasson         ###   ########.fr       */
+/*   Updated: 2022/06/24 11:47:01 by lomasson         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_taille(const char *src, char c)
+char	**ft_lenght(const char *src, char c)
 {
 	int		i;
 	int		y;
@@ -46,7 +46,7 @@ char	**ft_split(const char*s, char c)
 	x = 0;
 	if (!s)
 		return (NULL);
-	dest = ft_taille(s, c);
+	dest = ft_lenght(s, c);
 	while (*s)
 	{
 		i = 0;

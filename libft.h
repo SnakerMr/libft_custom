@@ -6,7 +6,7 @@
 /*   By: lomasson <marvin@42.ft>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 11:45:46 by lomasson          #+#    #+#             */
-/*   Updated: 2022/06/10 16:35:38 by lomasson         ###   ########.fr       */
+/*   Updated: 2022/06/28 12:55:59 by lomasson         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,10 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
 # include <limits.h>
 # include <stdarg.h>
 # include <sys/types.h>
 # include <sys/stat.h>
-# include <fcntl.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -52,11 +50,18 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
+int		ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(long int n, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*get_next_line(int fd);
+int		ft_printf(const char *str, ...);
+int		ft_print_s(char *str);
+int		ft_print_hexa(unsigned int nb, int u, int count);
+int		ft_print_num(long int n, int count);
+int		ft_print_u(unsigned int n, int count);
+int		ft_print_ptr(unsigned long int n, int u, int count);
 char	*get_next_line(int fd);
 int		ft_printf(const char *str, ...);
 int		ft_print_s(char *str);
