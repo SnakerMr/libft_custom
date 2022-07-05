@@ -1,2 +1,2 @@
 # libft_custom
-Basic libft + ft_printf + get_next_line...
+[![<username>'s 42 stats](https://badge.mediaplus.ma/darkblue/<username>)](https://github.com/oakoudad/badge42)
